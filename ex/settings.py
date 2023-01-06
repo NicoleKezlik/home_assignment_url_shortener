@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-iw)it64p6-p@#nn_%6zf8ufz8(eb%n3l-0l)nx@978_yxrmezn
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://https://reqbin.com/curl','http://localhost:8000','localhost']
+ALLOWED_HOSTS = ['http://localhost:8000','localhost']
 
-CSRF_TRUSTED_ORIGINS = ['https://https://reqbin.com/curl','http://localhost:8000']
+CSRF_TRUSTED_ORIGINS = ['http://localhost:8000']
 # Application definition
 
 INSTALLED_APPS = [
