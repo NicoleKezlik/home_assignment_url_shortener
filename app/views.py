@@ -1,6 +1,3 @@
-from operator import mod
-from pyexpat import model
-from tkinter.messagebox import showerror
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.views import APIView
@@ -10,8 +7,6 @@ from app import models
 from django.shortcuts import redirect
 import secrets
 import string
-from django.views.decorators.csrf import csrf_exempt
-from django.utils.decorators import method_decorator
 from django.http import HttpResponseNotFound
 
 
