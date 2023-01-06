@@ -17,8 +17,6 @@ from django.http import HttpResponseNotFound
 
 
 class UrlView(APIView):
-    def get(self,request,*args,**kwargs):
-        return HttpResponse("Hellooo!!")
 
     def post(self,request,*args,**kwargs):
         original_url = request.data['url']
