@@ -1,3 +1,6 @@
+from operator import mod
+from pyexpat import model
+from tkinter.messagebox import showerror
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework.views import APIView
@@ -14,6 +17,8 @@ from django.http import HttpResponseNotFound
 
 
 class UrlView(APIView):
+    def get(self,request,*args,**kwargs):
+        return HttpResponse("Hellooo!!")
 
     def post(self,request,*args,**kwargs):
         original_url = request.data['url']
